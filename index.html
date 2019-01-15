@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>E</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
 
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Amnesia</h1>
+      <!-- All login/signup forms  -->
+  <div class="authp">
+      <div class="login-page">
+        <div class="form">
+          <form id="sign-up">
+            <span class="far fa-user"></span>
+            <input type="text" name="credentials[email]" placeholder="Email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
+              required>
+            <span class="fas fa-lock"></span>
+            <input type="password" name="credentials[password]" placeholder="Password">
+            <span class="fas fa-lock"></span>
+            <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+            <button>Sign up</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form id="sign-in">
+            <span class="far fa-user"></span>
+            <input type="text" name="credentials[email]" placeholder="Email">
+            <span class="fas fa-lock"></span>
+            <input type="password" name="credentials[password]" placeholder="Password">
+            <button>Log in</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="settingsp">
+        <div class="settings-page">
+          <div class="form">
+            <form id="changePassword">
+                  <p>Change your password</p>
+                  <fieldset>
+                    <input type="password" name="passwords[old]" placeholder="Old password">
+                    <input type="password" name="passwords[new]" placeholder="New password">
+                    <input class="btn btn-dark" type="submit" value="Change password">
+                  </fieldset>
+                </form>
+                <form id="sign-out">
+                   <fieldset>
+                     <input class="btn btn-dark" type="submit" value="Sign out">
+                   </fieldset>
+            </form>
+            <button class="goBack">Back</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+          <div class="screen">
+              <p class="content">Start a new game with the new game button.</p>
+            </div>
+            <div class="actions">
+              <!-- buttons are here -->
+              <button class="start">New Game</button>
+              <div class="gamebtn">
+                <button class="start1">Look out window</button>
+                <button class="start11">Look out window</button>
+                <button class="start2">Call the lobby</button>
+                <button class="branch1">Go down to the lobby</button>
+                <button class="branch2">Leave the hotel</button>
+                <button class="branch3">Go get breakfast</button>
+                <button class="branch4">Feel weird and leave quickly</button>
+                <button class="branch5">Turn on the news and leisurely eat</button>
+                <button class="branch6">Call out hello to the man</button>
+                <button class="branch7">Hide behind the other car and watch him</button>
+                <button class="branch8">Get in the car</button>
+                <button class="branch9">Stay hidden and watch him drive away</button>
+                <button class="branch10">Go back to hotel room and lie down</button>
+                <button class="branch11">Go to diner and eat chicken and waffles</button>
+                <button class="branch12">Go to police station</button>
+                <button class="branch13">Bounce off hood and run away</button>
+                <button class="branch14">Lie on the ground and wait for help</button>
+                <button class="branch15">Hide behind a parked car on the street</button>
+                <button class="branch16">Stop running and talk to staff</button>
+                <button class="branch17">Don't get in car</button>
+              </div>
+            </div>
+            <br>
+            <br>
+            <button class="accountb">Account</button>
+      </div>
     </body>
 </html>
