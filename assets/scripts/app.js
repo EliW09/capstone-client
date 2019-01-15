@@ -9,10 +9,13 @@ const gameEvents = require('./api/game/events.js')
 $(() => {
   // functions running when website is fully loaded
   $(document).ready(site.onLoad)
+  $(document).ready(site.draw)
 
   // button functions
   $('.accountb').on('click', site.openAccount)
   $('.goBack').on('click', site.onLogIn)
+  $('.showmygames').on('click', gameEvents.showMyGames)
+  $('.delete').on('submit', gameEvents.deleteMyGames)
 
   // auth functions
   $('#sign-up').on('submit', authEvents.onSignUp)

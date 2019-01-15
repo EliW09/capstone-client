@@ -4,11 +4,16 @@
 body {
     background: rgb(14, 14, 14);
     color: rgb(233, 72, 72);
-    text-align: center;
+    // text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
 
 .main {
     position: absolute;
+    text-align: center;
     left: 25%;
     width: 50%;
     height: 560px;
@@ -56,6 +61,11 @@ body {
 
 .gamebtn {
   width: 100%;
+}
+
+#canvas {
+  z-index: -1;
+  position: absolute;
 }
 
 // login forms

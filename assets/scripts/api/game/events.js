@@ -2,6 +2,7 @@
 const api = require('./api.js')
 const ui = require('./ui.js')
 const store = require('../../store.js')
+const getFormFields = require('../../../../lib/get-form-fields.js')
 
 const startANewGame = (event) => {
     event.preventDefault()
@@ -327,6 +328,22 @@ const button26 = () => { // Go to police station | make another branch12 button
     api.updateGame26()
 }
 
+const showMyGames = (event) => {
+    event.preventDefault()
+    api.getGames()
+      .then(ui.showAllGames)
+      .catch(ui.mainFailure)
+}
+
+const deleteMyGames = (event) => {
+    event.preventDefault()
+    const data = getFormFields(event.target)
+    console.log(data.game.id)
+    api.deleteGame(data.game.id)
+      .then(ui.deleteSuccess)
+      .catch(ui.mainFailure)
+}
+
 module.exports = {
     startANewGame,
     branchUp,
@@ -374,5 +391,7 @@ module.exports = {
     button23,
     button24,
     button25,
-    button26
+    button26,
+    showMyGames,
+    deleteMyGames
 }

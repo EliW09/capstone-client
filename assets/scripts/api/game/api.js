@@ -433,6 +433,26 @@ const updateGame26 = () => {
     })
 }
 
+const getGames = () => {
+    return $.ajax({
+      url: config.apiUrl + `/games/`,
+      method: 'GET',
+      headers: {
+        Authorization: 'Token token=' + store.user.token
+      }
+    })
+}
+
+const deleteGame = (id) => {
+    return $.ajax({
+        url: config.apiUrl + `/games/${id}`,
+        method: 'DELETE',
+        headers: {
+            Authorization: 'Token token=' + store.user.token
+          }
+    })
+} 
+
 module.exports = {
     getQuestionOne,
     getQuestionTwo,
@@ -479,5 +499,7 @@ module.exports = {
     updateGame23,
     updateGame24,
     updateGame25,
-    updateGame26
+    updateGame26,
+    getGames,
+    deleteGame
 }

@@ -14,6 +14,7 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
+      <canvas id="canvas" width="821" height="1440"></canvas>
       <h1>Amnesia</h1>
       <!-- All login/signup forms  -->
   <div class="authp">
@@ -94,7 +95,18 @@
               </div>
             </div>
             <br>
-            <br>
+            <div class="myGames">
+              <button class="showmygames">My games</button>
+              <div class="games"></div>
+            </div>
+            <div class="deleteGames">
+              <form class="delete">
+                <fieldset>
+                  <input type="text" name="game[id]" placeholder="Game ID">
+                  <input class="btn btn-dark" type="submit" value="Delete game">
+                </fieldset>
+              </form>
+            </div>
             <button class="accountb">Account</button>
       </div>
     </body>
