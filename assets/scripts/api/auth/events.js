@@ -1,12 +1,21 @@
 const getFormFields = require('../../../../lib/get-form-fields.js')
 const api = require('./api.js')
 const ui = require('./ui.js')
+const config = require('../../config.js')
 
 const onSignUp = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
   api.signUp(data)
     .then(ui.signUpSuccess)
+    .then(() => {
+        return $.ajax({
+          url: config.apiUrl + '/sign-in',
+          method: 'POST',
+          data
+      })
+    })
+    .then(ui.signInSuccess)
     .catch(ui.signUpFailure)
 }
 

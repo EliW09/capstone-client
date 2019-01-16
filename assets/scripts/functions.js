@@ -5,24 +5,30 @@
 const onLoad = () => {
     $('.settingsp').hide()
     $('.main').hide()
+    $('.extra').hide()
     $('.authp').show()
 }
 
 const onLogIn = () => {
     $('.authp').hide()
     $('.main').show()
+    $('.extra').show()
     $('.settingsp').hide()
+    $('.games').empty()
 }
 
 const onLogOut = () => {
     $('.main').hide()
+    $('.extra').hide()
     $('.settingsp').hide()
     $('.authp').show()
 }
 
 const openAccount = () => {
     $('.main').hide()
+    $('.extra').hide()
     $('.settingsp').show()
+    $('.games').empty()
 }
 
 function draw() {

@@ -38,8 +38,15 @@ const showAllGames = (response) => {
     response.games.forEach(game => {
         $('.games').append(`
         <div class=${game.id}>
-        <h4 id=${game.id}>${game.id}</h4>
+        <h4 id=${game.id}>Game id: ${game.id}</h4>
         </div>`)
+        if (game.q1 === "") {
+            $(`.${game.id}`).append('Game not started.')
+        }
+
+        else if (game.q5 !== 'Call out hello to the man.' || game.q6 == 'Turn on the news and leisurely eat.' || game.q8 == 'Lie on the ground and wait for help.' || game.q9 == 'Stop running and talk to staff.' || game.q10 == 'Don\'t get in car.' || game.q11 == 'Go to police station.' || game.q13 == 'Go to police station.' || game.q11 == 'Go to diner and eat chicken and waffles.') {
+            $(`.${game.id}`).append('Ending not found.')
+        }
         for (const key in game) {
         if (key !== 'id' && key !== 'user') {
             // if game[q#] is equal to the ending answer, append the ending text with the ID of the game
@@ -75,10 +82,16 @@ const showAllGames = (response) => {
     })
 }
 
+const deleteSuccess = () => {
+    toastr.success('Successfully deleted the game.')
+    $('.delete')[0].reset()
+}
+
 module.exports = {
     questionSuccess,
     foundEnding,
     mainFailure,
     gameCreateSuccess,
-    showAllGames
+    showAllGames,
+    deleteSuccess
 }

@@ -4,29 +4,35 @@
 body {
     background: rgb(14, 14, 14);
     color: rgb(233, 72, 72);
-    // text-align: center;
+    font-family: 'Special Elite', cursive;
 }
 
 h1 {
   text-align: center;
+  font-family: 'ZCOOL KuaiLe', cursive;
 }
 
 .main {
-    position: absolute;
+    position: relative;
     text-align: center;
-    left: 25%;
     width: 50%;
-    height: 560px;
+    top: 42px;
     border: 1px solid #434a52;
     background: rgb(21, 21, 21);
+    margin: 0 auto;
 }
 
 .screen {
-    position: absolute;
-    height: 430px;
+    height: 215px;
     background: rgb(21, 21, 21);
     justify-content: center;
     position: relative;
+    padding: 12% 0 0;
+    // margin: 0 auto;
+}
+
+.deleteGames {
+  font-family: "Roboto", sans-serif;
 }
 
 .content {
@@ -34,7 +40,7 @@ h1 {
     color: white;
 }
 
-.actions button {
+.actions button, .main button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -51,7 +57,7 @@ h1 {
   width: 32%;
 }
 
-.actions button:hover {
+.actions button:hover, .main button {
   background: rgb(212, 45, 45);
 }
 
@@ -80,6 +86,7 @@ h1 {
     width: 400px;
     padding: 12% 0 0;
     margin: auto;
+    font-family: "Roboto", sans-serif;
   }
   
   .form {
@@ -145,7 +152,8 @@ h1 {
   .form .message {
     margin: 15px 0 0;
     color: rgb(0, 0, 0);
-    font-size: 12px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
   }
   
   .form .message a {

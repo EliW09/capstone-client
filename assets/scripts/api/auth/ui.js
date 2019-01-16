@@ -2,6 +2,7 @@
 const toastr = require('toastr')
 const site = require('../../functions.js')
 const store = require('../../store.js')
+const api = require('./api.js')
 
 const signUpSuccess = () => {
   toastr.success('Account successfully created!')

@@ -330,6 +330,7 @@ const button26 = () => { // Go to police station | make another branch12 button
 
 const showMyGames = (event) => {
     event.preventDefault()
+    $('.games').empty()
     api.getGames()
       .then(ui.showAllGames)
       .catch(ui.mainFailure)
@@ -337,6 +338,7 @@ const showMyGames = (event) => {
 
 const deleteMyGames = (event) => {
     event.preventDefault()
+    $('.games').empty()
     const data = getFormFields(event.target)
     console.log(data.game.id)
     api.deleteGame(data.game.id)
