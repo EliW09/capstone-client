@@ -31,10 +31,6 @@ h1 {
     // margin: 0 auto;
 }
 
-.deleteGames {
-  font-family: "Roboto", sans-serif;
-}
-
 .content {
     font-size: 28px;
     color: white;
@@ -61,6 +57,14 @@ h1 {
   background: rgb(212, 45, 45);
 }
 
+.games {
+  color: white;
+}
+
+.games button {
+  width: 18%;
+}
+
 .gamebtn button {
   display: none;
 }
@@ -72,6 +76,10 @@ h1 {
 #canvas {
   z-index: -1;
   position: absolute;
+}
+
+hr {
+  border: 1px solid #434a52;
 }
 
 // login forms

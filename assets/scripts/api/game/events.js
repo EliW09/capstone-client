@@ -339,9 +339,8 @@ const showMyGames = (event) => {
 const deleteMyGames = (event) => {
     event.preventDefault()
     $('.games').empty()
-    const data = getFormFields(event.target)
-    console.log(data.game.id)
-    api.deleteGame(data.game.id)
+    const gameId = $(event.target).closest('section').data('id')
+    api.deleteGame(gameId)
       .then(ui.deleteSuccess)
       .catch(ui.mainFailure)
 }
