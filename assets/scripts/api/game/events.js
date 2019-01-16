@@ -7,6 +7,7 @@ const getFormFields = require('../../../../lib/get-form-fields.js')
 const startANewGame = (event) => {
     event.preventDefault()
     $('.start').hide()
+    $('.games').empty()
     $('.restart').hide()
     $('.start1').show()
     $('.start2').show()
@@ -21,6 +22,7 @@ const startANewGame = (event) => {
 const branchUp = (event) => {
     event.preventDefault()
     $('.start1').hide()
+    $('.games').empty()
     $('.start11').hide()
     $('.start2').hide()
     $('.branch1').show()
@@ -33,6 +35,7 @@ const branchUp = (event) => {
 const branchDown = (event) => {
     event.preventDefault()
     $('.start1').hide()
+    $('.games').empty()
     $('.start11').hide()
     $('.start2').hide()
     $('.branch1').show()
@@ -45,6 +48,7 @@ const branchDown = (event) => {
 const branchDownTwo = (event) => {
     event.preventDefault()
     $('.start1').hide()
+    $('.games').empty()
     $('.start11').hide()
     $('.start2').hide()
     $('.branch1').show()
@@ -58,6 +62,7 @@ const branchUpCont = (event) => {
     event.preventDefault()
     $('.branch1').hide()
     $('.start1').hide()
+    $('.games').empty()
     $('.start11').hide()
     $('.branch3').show()
     $('.branch2').show()
@@ -69,6 +74,7 @@ const branchUpCont = (event) => {
 const branchUpContTwo = (event) => {
     event.preventDefault()
     $('.branch3').hide()
+    $('.games').empty()
     $('.branch2').hide()
     $('.branch4').show()
     $('.branch5').show()
@@ -80,6 +86,7 @@ const branchUpContTwo = (event) => {
 const branchUpContThree = (event) => {
     event.preventDefault()
     $('.branch4').hide()
+    $('.games').empty()
     $('.branch5').hide()
     $('.branch13').show()
     $('.branch14').show()
@@ -91,6 +98,7 @@ const branchUpContThree = (event) => {
 const branchUpContFour = (event) => {
     event.preventDefault()
     $('.branch13').hide()
+    $('.games').empty()
     $('.branch14').hide()
     $('.branch16').show()
     $('.branch15').show()
@@ -102,6 +110,7 @@ const branchUpContFour = (event) => {
 const branchUpContFive = (event) => {
     event.preventDefault()
     $('.branch16').hide()
+    $('.games').empty()
     $('.branch15').hide()
     $('.branch17').show()
     $('.branch8').show()
@@ -113,6 +122,7 @@ const branchUpContFive = (event) => {
 const branchDownCont = (event) => {
     event.preventDefault()
     $('.branch1').hide()
+    $('.games').empty()
     $('.branch2').hide()
     $('.branch3').hide()
     $('.branch6').show()
@@ -125,6 +135,7 @@ const branchDownCont = (event) => {
 const branchDownContTwo = (event) => {
     event.preventDefault()
     $('.branch6').hide()
+    $('.games').empty()
     $('.branch7').hide()
     $('.branch8').show()
     $('.branch9').show()
@@ -136,6 +147,7 @@ const branchDownContTwo = (event) => {
 const branchDownContThree = (event) => {
     event.preventDefault()
     $('.branch8').hide()
+    $('.games').empty()
     $('.branch9').hide()
     $('.branch10').show()
     $('.branch8').show()
@@ -147,6 +159,7 @@ const branchDownContThree = (event) => {
 const branchDownContFour = (event) => {
     event.preventDefault()
     $('.branch10').hide()
+    $('.games').empty()
     $('.branch8').hide()
     $('.branch9').hide()
     $('.branch17').hide()
@@ -159,6 +172,7 @@ const branchDownContFour = (event) => {
 
 const branchDownContFive = (event) => {
     event.preventDefault()
+    $('.games').empty()
     $('.branch11').hide()
     $('.branch12').hide()
     $('.branch10').show()

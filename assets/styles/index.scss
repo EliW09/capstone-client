@@ -59,6 +59,7 @@ h1 {
 
 .games {
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .games button {
@@ -75,7 +76,8 @@ h1 {
 
 #canvas {
   z-index: -1;
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 
 hr {
