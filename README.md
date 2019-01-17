@@ -1,6 +1,6 @@
-Backend repo: <link>
-Deployed frontend: <link>
-Deployed backend: <link>
+Backend repo: https://github.com/EliW09/capstone-api
+Deployed frontend: https://EliW09.github.io/capstone-client
+Deployed backend: https://powerful-mountain-74350.herokuapp.com/
 
 My game is called Escape, built in html5, canvas (html5, made my background), sass, toastr (for popups), JQuery and javascript. The game has a backend to save your game choices and to get the storyline to be displayed on the frontend. As you play the game you constantly make requests to the backend to save what you pick. This game is very backend heavy meaning the majority of the javascript is just event listeners and ajax requests other than a few jquery hide and show functions to display what you need at that very time. I made a colorful shaped background with canvas to add some color and design to the game without using any images.
 

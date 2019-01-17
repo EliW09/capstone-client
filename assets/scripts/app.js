@@ -29,7 +29,6 @@ $(() => {
   $('.start11').on('click', gameEvents.branchUp)
   $('.start2').on('click', gameEvents.branchDownTwo)
   $('.branch1').on('click', gameEvents.branchUpCont)
-  $('.branch1Cont').on('click', gameEvents.branchUpCont)
   $('.branch2').on('click', gameEvents.branchDownCont)
   $('.branch3').on('click', gameEvents.branchUpContTwo)
   $('.branch4').on('click', gameEvents.branchUpContThree)
