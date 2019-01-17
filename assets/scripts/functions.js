@@ -28,6 +28,7 @@ const openAccount = () => {
     $('.main').hide()
     $('.extra').hide()
     $('.settingsp').show()
+    $('.settingsp').show()
     $('.games').empty()
 }
 

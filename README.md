@@ -11,14 +11,18 @@ For this project I made my wireframe via HTML and jumped right into the backend 
 Wireframe: https://www.lucidchart.com/invitations/accept/86efffd5-cb18-4cd3-a518-538f6ee36c55
 
 User stories:
+```
     As a user, I want to be able to save my choices as I play the game.
     As a user, I want to be able to view my previous games.
     As a user, I want to be able to change my password.
     As a user, I want to only see my own games.
+```
 
 the app: https://www.tinyurl.com/y8qofhzl
 
 Installation: 
+```
     1: clone my repo
     2: npm install
     3: grunt serve
+```
