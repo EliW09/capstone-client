@@ -8,7 +8,7 @@ Something I want to accomplish with my game is allow for a mix of games to pick 
 
 For this project I made my wireframe via HTML and jumped right into the backend to get my ajax requests setup so I could start my game logic. After my api was setup and working correctly I went right into making all the buttons I needed and making certain ones show at set times during the game. After getting all buttons to show correctly I created the ajax get requests to fetch the game storyline to be displayed on screen.
 
-Wireframe: <link>
+Wireframe: https://www.lucidchart.com/invitations/accept/86efffd5-cb18-4cd3-a518-538f6ee36c55
 
 User stories:
     As a user, I want to be able to save my choices as I play the game.
@@ -16,7 +16,7 @@ User stories:
     As a user, I want to be able to change my password.
     As a user, I want to only see my own games.
 
-the app: <photo>
+the app: https://www.tinyurl.com/y8qofhzl
 
 Installation: 
     1: clone my repo
